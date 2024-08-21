@@ -1,0 +1,74 @@
+<!-- this is a comment -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NESTED SELECTORS</title>
+    <style>
+        /* h1, p {
+                color: green;
+            } */
+        /* GROUPING SELECTORS */
+        /* div {
+                color: violet;
+            } */
+        /* p {
+                color: green;
+            } */
+        body {
+            background-color: antiquewhite;
+        }
+
+        /* CHANGING FONT SIZE */
+        h1.small {
+            font-size: 25px;
+        }
+
+        /* DIFFERENT LINK STATES */
+        a {
+            color: black;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        a:active {
+            color: red;
+        }
+
+        a:visited {
+            color: violet;
+        }
+
+        /* NESTED SELECTORS */
+        p strong i {
+            /* color: darkmagenta; */
+            color: rgba(255, 0, 0, 0.5);
+            /* color: #ff0000; */
+            /* color: rgb(255, 0, 0); */
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="small">This is a Heading</h1>
+    <div>This is a div element</div>
+    <p>This is a paragraph.</p>
+    <div>
+        <p>
+            <strong>
+                <i>Lorem ipsum</i>, dolor sit amet consectetur adipisicing
+                elit.
+            </strong>
+            Animi at vitae corrupti molestias quam alias doloribus
+            voluptatem exercitationem nam ad iste dolore excepturi officiis
+            sit tenetur labore, repellat dignissimos magnam!
+        </p>
+        <strong>This is bold</strong>
+    </div>
+
+    <a href="index.html">Go to index.html</a>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        /* #container div {
+            border: 1px solid red;
+        } */
+        .nav {
+            flex-basis: 20%;
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+        .content {
+            flex-basis: 80%;
+            flex-grow: 1;
+            flex-shrink: 0;
+        }
+        .header {
+            flex-basis: 100%;
+            flex-grow: 1;
+            flex-shrink: 0;
+            background-color: #f5f5f5;
+            color: #000;
+            padding: 20px;
+            border-bottom: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="header">
+            Here is Header
+        </div>
+        <div class="nav">Navigation</div>
+        <div class="content">
+            <h1>Hello World!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quae quasi saepe id quo molestias beatae accusantium ducimus animi sapiente velit sit iste nobis quod cum architecto ipsam, voluptatum voluptates.</p>
+            <h2>Hello World again!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis eius vero officia eum quae voluptatibus magni, facilis iure quam quos similique ipsa neque officiis! Amet doloribus accusantium adipisci quia necessitatibus.</p>
+        </div>
+    </div>
+</body>
+</html>

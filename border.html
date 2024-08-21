@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Border Design</title>
+    <style>
+        body {
+            background-color: antiquewhite;
+        }
+
+        h1#intro {
+            /* ID SELECTOR */
+            text-align: center;
+        }
+
+        div.red-border {
+            /* text-align: center; */
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            /* SHORTCUT: border: 10px solid red; */
+            border-top-left-radius: 5px;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 50%;
+            /* SHORTCUT: border-radius: 5px 50% 5px 50%; */
+            /* CLOCLWISE ORDER: TOP-LEFT, TOP-RIGHT, BOTTOM-RIGHT, BOTTOM-LEFT */
+            width: 200px;
+            height: 200px;
+            /* border: 5px dotted red; */
+        }
+
+        /* div{
+                display: inline-block;
+                border: 1px solid red;
+                width: 200px;
+                height: 200px;
+            } */
+        span.half-width {
+            width: 500px;
+            border: 1px solid red;
+            /* display: block; */
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="intro">Heading</h1>
+    <div>This is a block element</div>
+    <div>This is a block element</div>
+    <!-- <span>This is an inline element</span> -->
+    <div class="red-border">This has a border</div>
+    <span class="half-width">This is half width</span>
+</body>
+
+</html>
